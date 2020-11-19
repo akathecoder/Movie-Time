@@ -4,9 +4,11 @@ import "../styles/MovieCard.css";
 function MovieCard(props) {
   return (
     <div className="card">
-      <a href={props.link} className="poster" title={props.title}>
-        <img src={props.img} alt={props.title} className="poster" />
-      </a>
+      <div href={props.link} className="poster-wrapper" title={props.title}>
+        <a href={props.link} className="poster-wrapper" title={props.title}>
+          <img src={props.img} alt={props.title} className="poster" />
+        </a>
+      </div>
 
       <a className="title" href={props.link} title={props.title}>
         {props.title}

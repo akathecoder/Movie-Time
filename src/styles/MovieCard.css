@@ -28,7 +28,18 @@
   width: 200px;
 }
 
+.poster-wrapper {
+  width: inherit;
+  overflow: hidden;
+  border-radius: 0.6rem;
+}
+
 .poster {
   width: inherit;
   border-radius: 0.6rem;
+  transition: transform 0.5s ease-in-out;
+}
+
+.poster:hover {
+  transform: scale(1.2) rotate(-5deg);
 }
