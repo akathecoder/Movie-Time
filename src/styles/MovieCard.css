@@ -1,5 +1,5 @@
-h3,
-h6 {
+.title,
+.year {
   margin: 0;
   padding-left: 8px;
   overflow-wrap: break-word;
@@ -9,18 +9,22 @@ h6 {
   width: inherit;
 }
 
-h3 {
+.title {
   font-weight: 600;
   font-size: medium;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  color: black;
+  text-decoration: none;
 }
 
-h6 {
+.year {
   font-weight: 100;
   font-size: small;
 }
 
 .card {
-  display: block;
+  display: inline-block;
   width: 200px;
 }
 
