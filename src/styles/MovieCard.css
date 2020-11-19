@@ -1,0 +1,30 @@
+h3,
+h6 {
+  margin: 0;
+  padding-left: 8px;
+  overflow-wrap: break-word;
+  width: max-content;
+  /* font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif4; */
+  font-family: "Open Sans", sans-serif;
+  width: inherit;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: medium;
+}
+
+h6 {
+  font-weight: 100;
+  font-size: small;
+}
+
+.card {
+  display: block;
+  width: 200px;
+}
+
+.poster {
+  width: inherit;
+  border-radius: 0.6rem;
+}
