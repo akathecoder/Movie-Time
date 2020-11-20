@@ -26,6 +26,7 @@
 .card {
   display: inline-block;
   width: 200px;
+  margin: 20px;
 }
 
 .poster-wrapper {
@@ -41,5 +42,5 @@
 }
 
 .poster:hover {
-  transform: scale(1.2) rotate(-5deg);
+  transform: scale(1.2) rotate(-3deg);
 }
