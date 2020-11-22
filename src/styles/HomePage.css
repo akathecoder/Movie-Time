@@ -1,0 +1,13 @@
+* {
+  margin: 0 0px;
+  padding: 0;
+}
+
+body {
+  margin: 0 12rem;
+}
+
+h1 {
+  padding-left: 20px;
+  font-family: "Open Sans", sans-serif;
+}
