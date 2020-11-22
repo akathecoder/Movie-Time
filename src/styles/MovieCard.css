@@ -28,6 +28,9 @@
   width: 200px;
   margin: 20px;
 
+  vertical-align: top;
+
+  /* Breaks word when overflow */
   white-space: pre-wrap; /* CSS3 */
   white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
   white-space: -pre-wrap; /* Opera 4-6 */
