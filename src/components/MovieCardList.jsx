@@ -2,58 +2,21 @@ import React from "react";
 import "../styles/MovieCardList.css";
 import MovieCard from "./MovieCard";
 
-function MovieCardList() {
+function MovieCardList({ movies }) {
+  // console.log(movies);
   return (
     <div className="movie-list">
-      <MovieCard
-        img="https://image.tmdb.org/t/p/w600_and_h900_bestv2/or06FN3Dka5tukK1e9sl16pB3iy.jpg"
-        title="Avengers: Endgame"
-        year="04/26/2019"
-        link="https://www.themoviedb.org/movie/299534-avengers-endgame"
-      />
-      <MovieCard
-        img="https://image.tmdb.org/t/p/w600_and_h900_bestv2/or06FN3Dka5tukK1e9sl16pB3iy.jpg"
-        title="Avengers: Endgame"
-        year="04/26/2019"
-        link="https://www.themoviedb.org/movie/299534-avengers-endgame"
-      />
-      <MovieCard
-        img="https://image.tmdb.org/t/p/w600_and_h900_bestv2/or06FN3Dka5tukK1e9sl16pB3iy.jpg"
-        title="Avengers: Endgame"
-        year="04/26/2019"
-        link="https://www.themoviedb.org/movie/299534-avengers-endgame"
-      />
-      <MovieCard
-        img="https://image.tmdb.org/t/p/w600_and_h900_bestv2/or06FN3Dka5tukK1e9sl16pB3iy.jpg"
-        title="Avengers: Endgame"
-        year="04/26/2019"
-        link="https://www.themoviedb.org/movie/299534-avengers-endgame"
-      />
-      <MovieCard
-        img="https://image.tmdb.org/t/p/w600_and_h900_bestv2/or06FN3Dka5tukK1e9sl16pB3iy.jpg"
-        title="Avengers: Endgame"
-        year="04/26/2019"
-        link="https://www.themoviedb.org/movie/299534-avengers-endgame"
-      />
-      <MovieCard
-        img="https://image.tmdb.org/t/p/w600_and_h900_bestv2/or06FN3Dka5tukK1e9sl16pB3iy.jpg"
-        title="Avengers: Endgame"
-        year="04/26/2019"
-        link="https://www.themoviedb.org/movie/299534-avengers-endgame"
-      />
-      <MovieCard
-        img="https://image.tmdb.org/t/p/w600_and_h900_bestv2/or06FN3Dka5tukK1e9sl16pB3iy.jpg"
-        title="Avengers: Endgame"
-        year="04/26/2019"
-        link="https://www.themoviedb.org/movie/299534-avengers-endgame"
-      />
-
-      <MovieCard
-        img="https://image.tmdb.org/t/p/w600_and_h900_bestv2/or06FN3Dka5tukK1e9sl16pB3iy.jpg"
-        title="Avengers: Endgame"
-        year="04/26/2019"
-        link="https://www.themoviedb.org/movie/299534-avengers-endgame"
-      />
+      {movies.map((movie) => {
+        return (
+          <MovieCard
+            img={`https://image.tmdb.org/t/p/w600_and_h900_bestv2/${movie.poster_path}`}
+            title={movie.original_title}
+            year={movie.release_date}
+            link="https://www.themoviedb.org/movie/299534-avengers-endgame"
+            key={movie.id}
+          />
+        );
+      })}
     </div>
   );
 }
