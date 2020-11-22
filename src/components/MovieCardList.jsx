@@ -12,7 +12,7 @@ function MovieCardList({ movies }) {
             img={`https://image.tmdb.org/t/p/w600_and_h900_bestv2/${movie.poster_path}`}
             title={movie.original_title}
             year={movie.release_date}
-            link="https://www.themoviedb.org/movie/299534-avengers-endgame"
+            link={`/movie/${movie.id}`}
             key={movie.id}
           />
         );
