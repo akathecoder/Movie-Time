@@ -4,13 +4,14 @@
   /* margin: 20px; */
 }
 
+/* ? Uncomment these to hide Scroll bar  */
 /* Hide scrollbar for Chrome, Safari and Opera */
-.movie-list::-webkit-scrollbar {
+/* .movie-list::-webkit-scrollbar {
   display: none;
-}
+} */
 
 /* Hide scrollbar for IE, Edge and Firefox */
-.movie-list {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
+/* .movie-list {
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+} */
